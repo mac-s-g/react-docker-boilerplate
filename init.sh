@@ -53,6 +53,8 @@ safe_name=`echo "$safe_name" | tr '[:upper:]' '[:lower:]' | tr -d '[:space:]'`
 cd ..
 mkdir $safe_name
 cp -rp ./react-docker-boilerplate/. `echo "./$safe_name"`
+rm -rf `echo "./$safe_name/.git"`
+rm -rf `echo "./$safe_name/.gitignore"`
 
 cd $safe_name
 
