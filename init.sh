@@ -15,12 +15,11 @@ read author_email
 #lowercase and remove spaces
 author_email=`echo "$author_email" | tr '[:upper:]' '[:lower:]' | tr -d '[:space:]'`
 
-echo -e "\nBrowser Port:"
+echo -e "\nBrowser Port: (Skipping defaults to port 2000)"
 read browser_port
 browser_port=`echo $browser_port | sed "s/[^0-9]*//g"`
 if [ "$browser_port" == "" ]; then
-    echo Browser port must be numeric
-    exit
+    browser_port=2000
 fi
 
 echo -e "\n--- Project Config ---"
