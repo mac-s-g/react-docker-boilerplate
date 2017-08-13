@@ -52,6 +52,8 @@ To run dev server, copy and run these commands:
 
 Then navigate to http://localhost:3000 in your web browser
 ```
+### Default Browser Output
+![alt text](https://github.com/mac-s-g/react-docker-boilerplate/blob/master/docs/default-index.png?raw=true)
 
 ## Help
 ### Permission Errors
