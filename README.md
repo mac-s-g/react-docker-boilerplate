@@ -1,6 +1,6 @@
 # React Docker Boilerplate
 
-This project includes an `init.sh` script that automates creation of a React project using docker.
+This project includes an `init.sh` script that automates creation of a React Component project using docker.
 
 When you run the `init.sh` script, you will be prompted for the following items:
     1. Project Name
