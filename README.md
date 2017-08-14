@@ -71,4 +71,4 @@ Project initialization was tested in a Linux Environment.  Further work may be r
 ## To Do's
 
 * Improve input validation in `init.sh` 
-* Add [Styled Components](https://github.com/styled-components/styled-components) to base library
+* Add [Styled Components](https://github.com/styled-components/styled-components) to default dependency list
