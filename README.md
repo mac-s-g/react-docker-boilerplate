@@ -70,5 +70,5 @@ Project initialization was tested in a Linux Environment.  Further work may be r
 
 ## To Do's
 
-    1. Improve input validation in `init.sh` 
-    2. Add [Styled Components](https://github.com/styled-components/styled-components) to base library
+* Improve input validation in `init.sh` 
+* Add [Styled Components](https://github.com/styled-components/styled-components) to base library
