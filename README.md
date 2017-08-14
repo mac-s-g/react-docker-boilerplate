@@ -67,3 +67,8 @@ sudo ./docker/dev-server.sh
 
 ### Setup Environment
 Project initialization was tested in a Linux Environment.  Further work may be required to support Windows and Mac.
+
+## To Do's
+
+    1. Improve input validation in `init.sh` 
+    2. Add [Styled Components](https://github.com/styled-components/styled-components) to base library
