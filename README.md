@@ -3,6 +3,7 @@
 This project includes an `init.sh` script that automates creation of a React Component project using docker.
 
 When you run the `init.sh` script, you will be prompted for the following items:
+
     1. Project Name
     2. Author Name
     3. Author Email
@@ -66,3 +67,8 @@ sudo ./docker/dev-server.sh
 
 ### Setup Environment
 Project initialization was tested in a Linux Environment.  Further work may be required to support Windows and Mac.
+
+## To Do's
+
+* Improve input validation in `init.sh` 
+* Add [Styled Components](https://github.com/styled-components/styled-components) to default dependency list
