@@ -7,6 +7,9 @@ echo ------------------------
 echo -e "\nProject Name:"
 read project_name
 
+echo -e "\nBrief Description:"
+read project_description
+
 echo -e "\nAuthor Name:"
 read author_name
 
@@ -24,6 +27,7 @@ fi
 
 echo -e "\n--- Project Config ---"
 echo "Project Name: $project_name"
+echo "Project Description: $project_description"
 echo "Author Name: $author_name"
 echo "Author Email: $author_email"
 echo "Browser Port: $browser_port"
@@ -47,20 +51,23 @@ fi
 safe_name=`echo $project_name | tr ' ' '-'`
 #lowercase it and trim
 safe_name=`echo "$safe_name" | tr '[:upper:]' '[:lower:]' | tr -d '[:space:]'`
+safe_description=`echo "$project_description" | tr '[:upper:]' '[:lower:]' | tr -d '[:space:]'`
 
 #create and move to project repo
 cd ..
 mkdir $safe_name
 cp -rp ./react-docker-boilerplate/. `echo "./$safe_name"`
-rm -rf `echo "./$safe_name/docs"`
-rm `echo "./$safe_name/init.sh"`
-rm -rf `echo "./$safe_name/.git"`
-rm `echo "./$safe_name/.gitignore"`
+cd `echo "./$safe_name"`
+rm -rf docs .git
+rm init.sh .gitignore README.md
+mv readme_template.txt README.md
 
-cd $safe_name
 
 # write project name
 find -type f -name '*' -exec sed -i "s/BOILERPLATE-PROJECT-NAME/$safe_name/g" {} +
+
+# write project description
+find -type f -name '*' -exec sed -i "s/BOILERPLATE-PROJECT-DESCRIPTION/$project_description/g" {} +
 
 #write author
 find -type f -name '*' -exec sed -i "s/BOILERPLATE-AUTHOR/$author_name/g" {} +
