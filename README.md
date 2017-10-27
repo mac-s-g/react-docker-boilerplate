@@ -23,6 +23,9 @@ React Docker Boilerplate
 Project Name:
 Test Project
 
+Brief Description:
+Demo the boilerplate init script.
+
 Author Name:
 Mac Gainor
 
@@ -34,6 +37,7 @@ Browser Port: (Skipping defaults to port 2000)
 
 --- Project Config ---
 Project Name: Test Project
+Project Description: Demo the boilerplate init script.
 Author Name: Mac Gainor
 Author Email: mac.gainor@gmail.com
 Browser Port: 3000
@@ -70,5 +74,5 @@ Project initialization was tested in a Linux Environment.  Further work may be r
 
 ## To Do's
 
-* Improve input validation in `init.sh` 
-* Add [Styled Components](https://github.com/styled-components/styled-components) to default dependency list
+* Improve input validation in `init.sh`
+* Fine tune the set of dependencies that are included by default

@@ -83,7 +83,7 @@ chmod 777 `echo "./../$safe_name"`
 
 echo Building Docker Container...
 echo this may take a few minutes
-./docker/build.sh >/dev/null
+./docker/build-container.sh >/dev/null
 
 echo
 echo "--- \"$project_name\" Creation Complete ---"
