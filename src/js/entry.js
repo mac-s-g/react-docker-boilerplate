@@ -1,11 +1,11 @@
 "use strict";
 
-//import reactDom for browser rendering
-import ReactDom from "react-dom";
+//import ReactDOM for browser rendering
+import ReactDOM from "react-dom";
 
 import Index from './index';
 
-ReactDom.render(
+ReactDOM.render(
     <div>
         <Index />
     </div>,
