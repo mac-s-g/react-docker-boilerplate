@@ -1,6 +1,6 @@
 {
   "name": "BOILERPLATE-PROJECT-NAME",
-  "description": "",
+  "description": "BOILERPLATE-PROJECT-DESCRIPTION",
   "version": "0.0.0",
   "main": "dist/main.js",
   "files": [
