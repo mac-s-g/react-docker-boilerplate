@@ -1,8 +1,6 @@
-import { Component } from 'react';
+import React from 'react';
 
-require('/react/src/style/scss/global.scss');
-
-export default class extends Component {
+export default class extends React.Component {
 
     render() {
         const {state} = this;
