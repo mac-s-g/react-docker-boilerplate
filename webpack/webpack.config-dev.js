@@ -3,15 +3,15 @@ const webpack = require('webpack');
 const wds_port = BOILERPLATE-PORT;
 
 const PATHS = {
-    src: '/react/src',
-    js: '/react/src/js',
-    style: '/react/src/style',
-    build: '/react/dev-server',
-    devServer: '/react/dev-server',
+    src: path.join(__dirname, '..', 'src'),
+    js: path.join(__dirname, '..', 'src', 'js'),
+    style: path.join(__dirname, '..', 'src', 'style'),
+    build: path.join(__dirname, '..', 'dev-server'),
+    devServer: path.join(__dirname, '..', 'dev-server')
 };
 
 const config = {
-  entry: [PATHS.js + '/entry.js'],
+  entry: [path.join(PATHS.js, 'entry.js')],
   externals: {
     'react': 'React',
     'react-dom': 'ReactDOM',
@@ -31,7 +31,10 @@ const config = {
     libraryTarget: 'umd'
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('development')
+    })
   ],
   resolve: {
     extensions: [".js", ".json", ".css", ".scss"]
